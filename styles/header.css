@@ -12,12 +12,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
 }
-.container__imagem{
+
+.container__imagem {
     padding: 1em;
+}
+
+/* Controle do menu  */
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* detecta um evento com um combinador CSS */
+/* ele usa uma condição para aplicar o elemento css */
+.container__botao:checked ~ .lista-menu {
+    display: block;
 }
