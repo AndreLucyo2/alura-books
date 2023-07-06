@@ -3,13 +3,15 @@
 
 :root {
     --cor-de-fundo: #EBECEE;
-    --branco:#ffffff;
+    --branco: #ffffff;
+    --laranja: #EB9B00;
+    --azul-degrade: #154555;
 }
 
-body{
+body {
     background-color: var(--cor-de-fundo);
 }
 
-h1{
+h1 {
     background-color: wheat;
 }
