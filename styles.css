@@ -1,5 +1,9 @@
+/* link dos demais css , carrega mais rapido e o index fica mais limpa */
+@import url("/styles/header.css");
+
 :root {
     --cor-de-fundo: #EBECEE;
+    --branco:#ffffff;
 }
 
 body{
