@@ -1,6 +1,7 @@
 /* link dos demais css , carrega mais rapido e o index fica mais limpa */
 @import url("/styles/header.css");
 @import url("/styles/banner.css");
+@import url("/styles/carrossel.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
