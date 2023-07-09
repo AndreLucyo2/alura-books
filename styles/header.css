@@ -58,6 +58,27 @@
 }
 
 /* Ocultar o checkbox */
-.container__botao{
+.container__botao {
     display: none;
+}
+
+/* Animar coração do like: */
+#coracao {
+    display: none;
+}
+
+#coracao:checked+label>svg {
+    animation: preencher;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes preencher {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #d75a4a;
+    }
 }
