@@ -72,6 +72,7 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" name="" id="" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos!</h2>
         <!-- Slider main container -->
@@ -99,6 +100,95 @@
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
         </div>
+
+        <div class="card">
+            <!-- 1° linha -->
+            <div class="card__descricao">
+                <!-- 1° coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+
+                </div>
+                <!-- 2° coluna -->
+                <img src="/img/Angular.svg" alt="">
+
+            </div>
+
+            <!-- 2° linha -->
+            <div class="card__botoes">
+                <!-- 1° coluna -->
+                <ul class="botoes">
+                    <li class="botoes__item"> <img src="/img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"> <img src="/img/Compras.svg" alt="Adicionar ao carrinho"></li>
+                </ul>
+                <!-- 2° coluna -->
+                <a href="#" class="botoes__ancora">Saiba mais!</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="autor">
+        <h2 class="carrossel__titulo">Mais vendidos!</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/img/Acessibilidade.png" alt="Acessibilidade"></div>
+                <div class="swiper-slide"><img src="/img/ApacheKafka.png" alt="ApacheKafka"></div>
+                <div class="swiper-slide"><img src="/img/Arquitetura.png" alt="Arquitetura"></div>
+                <div class="swiper-slide"><img src="/img/Construct2.png" alt="Construct2"></div>
+                <div class="swiper-slide"><img src="/img/Gestão.png" alt="Gestão"></div>
+                <div class="swiper-slide"><img src="/img/Guia Front-end.png" alt="Guia Front-end"></div>
+                <div class="swiper-slide"><img src="/img/Javascript.png" alt="Javascript"></div>
+                <div class="swiper-slide"><img src="/img/Liderança.png" alt="Liderança"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <div class="card">
+            <!-- 1° linha -->
+            <div class="card__descricao">
+                <!-- 1° coluna -->
+                <div class="descricao">
+                    <img class="descricao__estrelinhas" src="/img/Estrelinhas.png" alt="estrelinhas">
+                    <h3 class="descricao__titulo">Autora do mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+
+                </div>
+                <!-- 2° coluna -->
+                <img src="/img/Perfil-escritora 1.png" alt="Perfil da escritora">
+
+            </div>
+
+            <!-- 2° linha -->
+            <div class="card__botoes">
+                <!-- 1° coluna -->
+                <ul class="botoes">
+                    <li class="botoes__item"> <img src="/img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"> <img src="/img/Compras.svg" alt="Adicionar ao carrinho"></li>
+                </ul>
+                <!-- 2° coluna -->
+                <a href="#" class="botoes__ancora">Saiba mais!</a>
+            </div>
+        </div>
+
+
     </section>
 
     <!-- scrip deixar sempre no final do body -->
@@ -106,7 +196,7 @@
     <script>
         //ver documentação da api swiper: https://swiperjs.com/swiper-api#initialize-swiper
         const swiper = new Swiper('.swiper', {
-            speed: 400,
+            speed: 50,
             spaceBetween: 10,
             slidesPerView: 3,
             pagination: {
@@ -114,7 +204,7 @@
                 type: 'bullets'
             }
         });
-        
+
     </script>
 </body>
 
