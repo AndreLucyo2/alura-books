@@ -6,3 +6,13 @@
     background-color: var(--branco);
     padding: 1em;
 }
+
+/* media query --------------------------------------------------------------- */
+/* Aplicar um determinaod estilo conforme o tamanho da tela */
+@media screen and (min-width:1024px) {
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

@@ -29,3 +29,14 @@
     font-size: 14px;
     font-weight: 700;
 }
+
+/* media query --------------------------------------------------------------- */
+/* Aplicar um determinaod estilo conforme o tamanho da tela */
+@media screen and (min-width:1024px) {
+    .topicos__titulo{
+        font-size: 24px;
+    }
+    .tipocos__link{
+        font-size: 24px;
+    }
+}
