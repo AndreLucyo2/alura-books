@@ -97,7 +97,11 @@
     display: none;
 }
 
-/* media query --------------------------------------------------------------- */
+.container__texto{
+    display: none;
+}
+
+/* media query tablet 1024 -------------------------------- */
 /* Aplicar um determinaod estilo conforme o tamanho da tela */
 @media screen and (min-width:1024px) {
 
@@ -146,4 +150,27 @@
     .opcoes__botao{
         display: none;
     }
+}
+
+/* media query desktop 1728 -------------------------------- */
+@media screen and (min-width:1728px) {
+    .container__texto{
+        display: block;
+    }
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho{
+        padding: 0 2em;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
 }
