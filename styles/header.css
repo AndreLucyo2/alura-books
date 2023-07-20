@@ -20,6 +20,14 @@
     align-items: center;
 }
 
+.container__botao:checked~.container__rotulo>.cabacalho__menu-hamburguer{
+    background-image: url("../img/menu_black_24dp\ 1.svg");
+}
+
+.container__botao:checked~.container__rotulo{
+    background: var(--azul-degrade);
+}
+
 .container__imagem {
     padding: 1em;
 }
