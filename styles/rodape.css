@@ -11,7 +11,7 @@
     display: none;
 }
 
-/* media query --------------------------------------------------------------- */
+/* media query tablet 1024 -------------------------------- */
 /* Aplicar um determinaod estilo conforme o tamanho da tela */
 @media screen and (min-width:1024px) {
     .rodape {
@@ -44,4 +44,16 @@
         font-size: 24px;
     }
 
+}
+
+/* media query desktop 1728 -------------------------------- */
+@media screen and (min-width:1728px) {
+    .lista-rodape {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+
+    .rodape{
+        padding: 3em 0;
+    }
 }
