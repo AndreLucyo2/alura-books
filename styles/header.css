@@ -20,11 +20,11 @@
     align-items: center;
 }
 
-.container__botao:checked~.container__rotulo>.cabacalho__menu-hamburguer{
+.container__botao:checked~.container__rotulo>.cabacalho__menu-hamburguer {
     background-image: url("../img/menu_black_24dp\ 1.svg");
 }
 
-.container__botao:checked~.container__rotulo{
+.container__botao:checked~.container__rotulo {
     background: var(--azul-degrade);
 }
 
@@ -86,6 +86,7 @@
     animation-fill-mode: forwards;
 }
 
+/* pinta o icone do coração */
 @keyframes preencher {
     0% {
         fill: transparent;
@@ -105,7 +106,7 @@
     display: none;
 }
 
-.container__texto{
+.container__texto {
     display: none;
 }
 
@@ -156,29 +157,48 @@
         width: auto;
     }
 
-    .opcoes__botao{
+    .opcoes__botao {
         display: none;
     }
+
+    .opcoes__botao:checked~.opcoes__rotulo>.opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item{
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover{
+       background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
 }
 
 /* media query desktop 1728 -------------------------------- */
 @media screen and (min-width:1728px) {
-    .container__texto{
+    .container__texto {
         display: block;
     }
 
-    .container__link{
+    .container__link {
         display: flex;
         align-items: center;
         text-decoration: none;
         color: var(--preto);
     }
 
-    .cabecalho{
+    .cabecalho {
         padding: 0 2em;
     }
 
-    .opcoes{
+    .opcoes {
         margin-right: auto;
     }
 
