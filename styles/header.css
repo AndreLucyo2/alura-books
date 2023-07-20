@@ -114,6 +114,7 @@
     .container__titulo {
         font-weight: 400;
         display: block;
+        background-color: transparent;
     }
 
     .container__titulo--negrito {
